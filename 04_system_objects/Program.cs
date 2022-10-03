@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace _04_system_objects
 {
@@ -47,6 +48,8 @@ namespace _04_system_objects
             }
             Console.WriteLine();
 
+            Console.WriteLine(string.Join("/", numbers));
+         
             //////////////////////// List
 
             List<double> numberList = new List<double>() { 33.8, 50, 0, 2.5 };
