@@ -76,6 +76,8 @@ namespace _04_system_objects
             var result = numberList.Find((i) => i > 10);
 
             Console.WriteLine(result);
+
+            // TODO: investigate other collection types (Dictionary, Stack, Queue, HashSet...)
         }
     }
 }
