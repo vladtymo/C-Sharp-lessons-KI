@@ -23,6 +23,9 @@ namespace _04_system_objects
             str.IndexOf('o');    // 4
             str.LastIndexOf('o');// 16
 
+            str.Contains("how");   // true
+            str.Replace('?', '!'); // ...you!
+
             Console.WriteLine("String length: " + str.Length);
 
             string newStr = str + " Blabla. " + starline;
