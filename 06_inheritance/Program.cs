@@ -98,6 +98,15 @@ namespace _06_inheritance
 
             person.ShowTypeName(); // from Person class (new)
             person.ShowInfo();     // from Student class (override)
+
+            //////////////// array of the classes which based on Person
+            Person[] people = new Person[]
+            {
+                new Person("Vikrotia"),
+                new Student("Oleg", 11.3F),
+                new Employee(),
+                new Manager()
+            };
         }
     }
 }
