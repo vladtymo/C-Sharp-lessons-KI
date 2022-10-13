@@ -79,7 +79,7 @@ namespace _06_inheritance
                 Birthdate = new DateTime(1990, 3, 6),
                 Country = "Ukraine"
             };
-
+           
             p.ShowInfo();
 
             Student st = new Student("Vova", 8.9F)
