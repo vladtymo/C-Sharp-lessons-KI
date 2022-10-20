@@ -80,6 +80,31 @@ namespace _04_system_objects
 
             Console.WriteLine(result);
 
+            //////////////////////// Dictionary
+            Dictionary<string, int> codes = new Dictionary<string, int>()
+            {
+                ["Rivne"] = 33055,
+                ["Lviv"] = 56770,
+                ["Kyiv"] = 19900,
+                ["Poltava"] = 33033
+            };
+
+            Console.WriteLine("Rivne ZIP code: " + codes["Rivne"]);
+            codes["Rivne"] = 25000;
+            Console.WriteLine("Rivne ZIP code: " + codes["Rivne"]);
+
+            foreach (var key in codes.Keys)
+            {
+                Console.WriteLine(key);
+            }
+            foreach (var value in codes.Values)
+            {
+                Console.WriteLine(value);
+            }
+
+            Console.WriteLine("Is Kharkiv key exists - " + codes.ContainsKey("Kharkiv"));
+            Console.WriteLine("Is 19900 value exists - " + codes.ContainsValue(19900));
+
             // TODO: investigate other collection types (Dictionary, Stack, Queue, HashSet...)
         }
     }
