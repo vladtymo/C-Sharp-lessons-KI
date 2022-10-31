@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_IEnumerable_IComparable"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_ICloneable", "08_interfaces\07_ICloneable\07_ICloneable.csproj", "{9489AA01-D400-479B-9C7D-3E8567C7139B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_delegates", "09_delegates\09_delegates.csproj", "{5FA660A1-D8AD-4166-BA90-7414391FAA82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +97,10 @@ Global
 		{9489AA01-D400-479B-9C7D-3E8567C7139B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9489AA01-D400-479B-9C7D-3E8567C7139B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9489AA01-D400-479B-9C7D-3E8567C7139B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FA660A1-D8AD-4166-BA90-7414391FAA82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FA660A1-D8AD-4166-BA90-7414391FAA82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FA660A1-D8AD-4166-BA90-7414391FAA82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FA660A1-D8AD-4166-BA90-7414391FAA82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
