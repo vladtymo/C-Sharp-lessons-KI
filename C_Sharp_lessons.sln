@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_ICloneable", "08_interfa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_delegates", "09_delegates\09_delegates.csproj", "{5FA660A1-D8AD-4166-BA90-7414391FAA82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_dispose", "10_dispose\10_dispose.csproj", "{4E93A044-47DD-48CF-B03A-76D8F4CB9324}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +103,10 @@ Global
 		{5FA660A1-D8AD-4166-BA90-7414391FAA82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FA660A1-D8AD-4166-BA90-7414391FAA82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FA660A1-D8AD-4166-BA90-7414391FAA82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E93A044-47DD-48CF-B03A-76D8F4CB9324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E93A044-47DD-48CF-B03A-76D8F4CB9324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E93A044-47DD-48CF-B03A-76D8F4CB9324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E93A044-47DD-48CF-B03A-76D8F4CB9324}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
