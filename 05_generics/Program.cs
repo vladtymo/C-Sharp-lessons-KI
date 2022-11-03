@@ -62,8 +62,8 @@ namespace _05_generics
     //      struct      - must be a value type
     //      class       - must be a reference type
     //      interface   - must implement this intefrace
-    //      new()       - must have a default constructor (set to end)   
-    //      BaseClass   - must have this base class
+    //      new()       - must have a default constructor (set at the end)   
+    //      BaseClass   - must have this base class (set an the beginning)
 
     // Generic Class ----------------------------------------
     class MyArray<ElementType> : IIndexer<ElementType>
@@ -116,7 +116,7 @@ namespace _05_generics
     /// <summary>Generic Class for Point</summary>
     /// <typeparam name="T1">Type of X coord</typeparam>
     /// <typeparam name="T2">Type of Y coord</typeparam>
-    class Point<T1, T2> //where T1 : IComparable<T1>, new()
+    class Point<T1, T2> where T1 : IComparable<T1>, new()
     {
         // do not allow to use arif and logic operations for generic types: T1, T2
         public T1 X { get; set; }
@@ -136,10 +136,10 @@ namespace _05_generics
             Y = default(T2);
 
             // with limited new()
-            //T1 item = new T1();
+            T1 item = new T1();
 
             // with interface limit
-            //item.CompareTo(X);
+            item.CompareTo(X);
         }
 
         public Point(T1 x, T2 y)
