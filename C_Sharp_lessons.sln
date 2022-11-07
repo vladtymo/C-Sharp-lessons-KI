@@ -9,33 +9,37 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_files", "02_files\02_fil
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_classes", "03_classes\03_classes.csproj", "{95D35A84-579C-4D2A-BB1D-367B780B83CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_system_objects", "04_system_objects\04_system_objects.csproj", "{22077E5A-2215-4152-98E9-A727B120C433}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_system_objects", "04_system_objects\04_system_objects.csproj", "{22077E5A-2215-4152-98E9-A727B120C433}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_generics", "05_generics\05_generics.csproj", "{7D143765-C11E-476B-936C-70BEC400994F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_generics", "05_generics\05_generics.csproj", "{7D143765-C11E-476B-936C-70BEC400994F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_inheritance", "06_inheritance\06_inheritance.csproj", "{38C21EDE-FF96-4819-A3E8-E26FA91319AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_inheritance", "06_inheritance\06_inheritance.csproj", "{38C21EDE-FF96-4819-A3E8-E26FA91319AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_polymorphism", "07_polymorphism\07_polymorphism.csproj", "{6A915D17-7A15-4A38-9DAE-F05F0069FE8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_polymorphism", "07_polymorphism\07_polymorphism.csproj", "{6A915D17-7A15-4A38-9DAE-F05F0069FE8E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08_Interfaces", "08_Interfaces", "{89DC4FE9-BEE3-4DE1-B0B9-75DF5862B973}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_interface_refs", "08_interfaces\02_interface_refs\02_interface_refs.csproj", "{8A75922D-8862-4671-921E-3793FF9461C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_interface_refs", "08_interfaces\02_interface_refs\02_interface_refs.csproj", "{8A75922D-8862-4671-921E-3793FF9461C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_base", "08_interfaces\01_interface_base\01_base.csproj", "{9A760022-7090-41CE-AF63-D9C4AB994253}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_base", "08_interfaces\01_interface_base\01_base.csproj", "{9A760022-7090-41CE-AF63-D9C4AB994253}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_interface_props", "08_interfaces\03_interface_props\03_interface_props.csproj", "{ECDAD232-4251-4385-801C-7FA9600663D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_interface_props", "08_interfaces\03_interface_props\03_interface_props.csproj", "{ECDAD232-4251-4385-801C-7FA9600663D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_interface_inherit", "08_interfaces\04_interface_inherit\04_interface_inherit.csproj", "{4199F2EB-2F47-4803-ACDC-2EACBDCEEF52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_interface_inherit", "08_interfaces\04_interface_inherit\04_interface_inherit.csproj", "{4199F2EB-2F47-4803-ACDC-2EACBDCEEF52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_interface_explicit", "08_interfaces\05_interface_explicit\05_interface_explicit.csproj", "{D3CDC826-6895-4220-A2D6-7C262E67C5F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_interface_explicit", "08_interfaces\05_interface_explicit\05_interface_explicit.csproj", "{D3CDC826-6895-4220-A2D6-7C262E67C5F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_IEnumerable_IComparable", "08_interfaces\06_IEnumerable_IComparable\06_IEnumerable_IComparable.csproj", "{472DCC67-6465-471D-A201-994037E6F5FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_IEnumerable_IComparable", "08_interfaces\06_IEnumerable_IComparable\06_IEnumerable_IComparable.csproj", "{472DCC67-6465-471D-A201-994037E6F5FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_ICloneable", "08_interfaces\07_ICloneable\07_ICloneable.csproj", "{9489AA01-D400-479B-9C7D-3E8567C7139B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_ICloneable", "08_interfaces\07_ICloneable\07_ICloneable.csproj", "{9489AA01-D400-479B-9C7D-3E8567C7139B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_delegates", "09_delegates\09_delegates.csproj", "{5FA660A1-D8AD-4166-BA90-7414391FAA82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_delegates", "09_delegates\09_delegates.csproj", "{5FA660A1-D8AD-4166-BA90-7414391FAA82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_dispose", "10_dispose\10_dispose.csproj", "{4E93A044-47DD-48CF-B03A-76D8F4CB9324}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_dispose", "10_dispose\10_dispose.csproj", "{4E93A044-47DD-48CF-B03A-76D8F4CB9324}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11_entity_framework", "11_entity_framework", "{E45F872B-1058-43D6-9FBD-D6B85C7779EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_ef_base", "01_ef_base\01_ef_base.csproj", "{340DE5DD-1275-4902-A954-A810549A264A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -107,12 +111,13 @@ Global
 		{4E93A044-47DD-48CF-B03A-76D8F4CB9324}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E93A044-47DD-48CF-B03A-76D8F4CB9324}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E93A044-47DD-48CF-B03A-76D8F4CB9324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{340DE5DD-1275-4902-A954-A810549A264A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{340DE5DD-1275-4902-A954-A810549A264A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{340DE5DD-1275-4902-A954-A810549A264A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{340DE5DD-1275-4902-A954-A810549A264A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9A81AE83-18A7-4E52-A184-DB273384F943}
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8A75922D-8862-4671-921E-3793FF9461C7} = {89DC4FE9-BEE3-4DE1-B0B9-75DF5862B973}
@@ -122,5 +127,9 @@ Global
 		{D3CDC826-6895-4220-A2D6-7C262E67C5F2} = {89DC4FE9-BEE3-4DE1-B0B9-75DF5862B973}
 		{472DCC67-6465-471D-A201-994037E6F5FE} = {89DC4FE9-BEE3-4DE1-B0B9-75DF5862B973}
 		{9489AA01-D400-479B-9C7D-3E8567C7139B} = {89DC4FE9-BEE3-4DE1-B0B9-75DF5862B973}
+		{340DE5DD-1275-4902-A954-A810549A264A} = {E45F872B-1058-43D6-9FBD-D6B85C7779EF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A81AE83-18A7-4E52-A184-DB273384F943}
 	EndGlobalSection
 EndGlobal
