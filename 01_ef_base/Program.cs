@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 using System.Collections.Generic;
 
 namespace _01_ef_base
 {
     // DbContext - important class in Entity Framework API. It is a bridge between your domain or entity classes and the database.
+    // DbContext - define database model
     public class ShopDbContext : DbContext
     {
         public ShopDbContext()
@@ -24,13 +24,13 @@ namespace _01_ef_base
             optionsBuilder.UseSqlServer(connStr);
         }
 
-        // Database object collections definition (db tables)
+        // DbSet<> - define database table
         public DbSet<Product> Products { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Sale> Salles { get; set; }
     }
 
-    // Entity classes definition
+    // Entity - define table model
     public class Product
     {
         // Entity properties definition (table columns)
