@@ -9,7 +9,7 @@
             // ----------- show all students
             foreach (var st in context.Students)
             {
-                Console.WriteLine($"[Student]: {st.Name} {st.Birthdate.ToShortDateString()} - {st.AverageMark} mark");
+                Console.WriteLine($"[Student]: {st.Name} {st.Birthdate?.ToShortDateString()} - {st.AverageMark} mark");
             }
 
             Console.Write("Enter new subject name: ");

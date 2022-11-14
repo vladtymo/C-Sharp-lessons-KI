@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using _02_ef_university_db.Entities;
+using Microsoft.EntityFrameworkCore;
+using System.Text.RegularExpressions;
 
 namespace _02_ef_university_db
 {
@@ -7,6 +9,7 @@ namespace _02_ef_university_db
     {
         public UniversityDbContext()
         {
+            Database.EnsureDeleted();
             Database.EnsureCreated(); // create db if not exist
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -20,41 +23,25 @@ namespace _02_ef_university_db
         {
             base.OnModelCreating(modelBuilder);
 
+            // ------------- Entity Configurations (Fluent API) -------------
+
+            // One to Many (1...*)
+            modelBuilder.Entity<Student>().HasOne(x => x.Group)
+                                          .WithMany(x => x.Students)
+                                          .HasForeignKey(x => x.GroupId);
+
+            // Many to Many (*...*)
+            modelBuilder.Entity<Group>().HasMany(x => x.Subjects).WithMany(x => x.Groups);
+
             // ------------- Database initialization -------------
-            // - Dont need to invoke SaveChanges()
-            // - Need to set the primary keys explicity
-
-            Group gr1 = new() { Id = 1, Name = "Kyiv" };
-            Group gr2 = new() { Id = 2, Name = "Kharkiv" };
-
-            modelBuilder.Entity<Group>().HasData(gr1, gr2);
-
-            Student st1 = new()
-            {
-                Id = 1,
-                Name = "Igor",
-                Birthdate = new DateTime(2003, 1, 3),
-                AverageMark = 8.7F,
-                Address = "Soborna street 5a, Rivne Ukraine",
-                //Group = gr1,
-                GroupId = 1,
-            };
-            Student st2 = new()
-            {
-                Id = 2,
-                Name = "Olga",
-                Birthdate = new DateTime(2005, 5, 10),
-                AverageMark = 9.5F,
-                Address = "Poshtova street 7b, Rivne Ukraine",
-                //Group = gr2,
-                GroupId = 2,
-            };
-
-            modelBuilder.Entity<Student>().HasData(st1, st2);
+            
+            //DbInitializer.Seed(modelBuilder);
+            modelBuilder.Seed();
         }
 
         public DbSet<Student> Students { get; set; }
         public DbSet<Group> Groups { get; set; }
         public DbSet<Subject> Subjects { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
     }
 }
