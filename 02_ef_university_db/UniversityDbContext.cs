@@ -9,7 +9,7 @@ namespace _02_ef_university_db
     {
         public UniversityDbContext()
         {
-            Database.EnsureDeleted();
+            //Database.EnsureDeleted();
             Database.EnsureCreated(); // create db if not exist
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

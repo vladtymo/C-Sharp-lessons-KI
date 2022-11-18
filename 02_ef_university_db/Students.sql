@@ -1,0 +1,10 @@
+insert into Students (Name, Birthdate, AverageMark, Address, GroupId) values ('Vonnie', '2005-12-05', 9.7, '0008 Charing Cross Street', 1);
+insert into Students (Name, Birthdate, AverageMark, Address, GroupId) values ('Nichol', '2002-10-19', 5.7, '4 Laurel Street', 2);
+insert into Students (Name, Birthdate, AverageMark, Address, GroupId) values ('Tory', '2006-01-06', 8.0, '57039 Oneill Crossing', 1);
+insert into Students (Name, Birthdate, AverageMark, Address, GroupId) values ('Gisele', '2004-01-01', 5.7, '72 Arapahoe Pass', 1);
+insert into Students (Name, Birthdate, AverageMark, Address, GroupId) values ('Bradly', '2004-08-26', 9.7, '541 Leroy Circle', 1);
+insert into Students (Name, Birthdate, AverageMark, Address, GroupId) values ('Kathlin', '2004-02-05', 3.5, '8 Morrow Court', 2);
+insert into Students (Name, Birthdate, AverageMark, Address, GroupId) values ('Merissa', '2001-06-15', 1.1, '20 Calypso Trail', 1);
+insert into Students (Name, Birthdate, AverageMark, Address, GroupId) values ('Quint', '2002-11-05', 1.8, '9219 Colorado Parkway', 2);
+insert into Students (Name, Birthdate, AverageMark, Address, GroupId) values ('Jaime', '2002-05-22', 8.9, '47 Jay Avenue', 2);
+insert into Students (Name, Birthdate, AverageMark, Address, GroupId) values ('Taylor', '2005-06-16', 9.1, '710 Swallow Court', 1);
