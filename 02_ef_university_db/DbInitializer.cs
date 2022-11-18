@@ -39,8 +39,26 @@ namespace _02_ef_university_db
                 //Group = gr2,
                 GroupId = 2,
             };
+            Student st3 = new()
+            {
+                Id = 3,
+                Name = "Sasha",
+                Birthdate = new DateTime(2005, 10, 3),
+                AverageMark = 10.3F,
+                Address = "Soborna street 5a, Rivne Ukraine",
+                GroupId = 1,
+            };
+            Student st4 = new()
+            {
+                Id = 4,
+                Name = "Viktoria",
+                Birthdate = new DateTime(2004, 9, 10),
+                AverageMark = 11.3F,
+                Address = "Soborna street 10a, Rivne Ukraine",
+                GroupId = 2,
+            };
 
-            modelBuilder.Entity<Student>().HasData(st1, st2);
+            modelBuilder.Entity<Student>().HasData(st1, st2, st3, st4);
         }
     }
 }

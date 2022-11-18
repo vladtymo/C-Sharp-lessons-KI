@@ -41,7 +41,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11_entity_framework", "11_e
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_ef_base", "01_ef_base\01_ef_base.csproj", "{340DE5DD-1275-4902-A954-A810549A264A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_ef_university_db", "02_ef_university_db\02_ef_university_db.csproj", "{9069F4C6-5BEE-4736-AABD-9DA3BB74F58C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_ef_university_db", "02_ef_university_db\02_ef_university_db.csproj", "{9069F4C6-5BEE-4736-AABD-9DA3BB74F58C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_linq", "12_linq\12_linq.csproj", "{ACD0873E-68F9-4BF7-B3CF-131B995CDDBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -121,6 +123,10 @@ Global
 		{9069F4C6-5BEE-4736-AABD-9DA3BB74F58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9069F4C6-5BEE-4736-AABD-9DA3BB74F58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9069F4C6-5BEE-4736-AABD-9DA3BB74F58C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACD0873E-68F9-4BF7-B3CF-131B995CDDBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD0873E-68F9-4BF7-B3CF-131B995CDDBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACD0873E-68F9-4BF7-B3CF-131B995CDDBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACD0873E-68F9-4BF7-B3CF-131B995CDDBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
