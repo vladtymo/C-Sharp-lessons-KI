@@ -22,6 +22,9 @@ namespace _02_ef_university_db.Entities
         [Required, MaxLength(100), Column("LastName")]
         public string Surname { get; set; }
 
+        [MaxLength(50)]
+        public string? PhoneNumber { get; set; }
+
         [NotMapped]           // ignore property
         public string FullName => $"{Name} {Surname}";
     }

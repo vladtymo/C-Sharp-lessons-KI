@@ -1,4 +1,6 @@
-﻿namespace _02_ef_university_db
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace _02_ef_university_db
 {
     public class Subject
     {

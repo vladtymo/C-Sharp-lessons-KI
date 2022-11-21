@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Text.RegularExpressions;
 
-namespace _02_ef_university_db
+namespace _02_ef_university_db.Data
 {
     // Task: create university database
     public class UniversityDbContext : DbContext
@@ -10,7 +10,7 @@ namespace _02_ef_university_db
         public UniversityDbContext()
         {
             //Database.EnsureDeleted();
-            Database.EnsureCreated(); // create db if not exist
+            //Database.EnsureCreated(); // create db if not exist
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -34,7 +34,7 @@ namespace _02_ef_university_db
             modelBuilder.Entity<Group>().HasMany(x => x.Subjects).WithMany(x => x.Groups);
 
             // ------------- Database initialization -------------
-            
+
             //DbInitializer.Seed(modelBuilder);
             modelBuilder.Seed();
         }

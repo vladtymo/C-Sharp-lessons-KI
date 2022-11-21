@@ -160,7 +160,7 @@ namespace _05_generics
         }
     }
 
-    class Vector<T>
+    class Vector<T> where T : IComparable<T>, new()
     {
         private Point<T, T>[] points;
 

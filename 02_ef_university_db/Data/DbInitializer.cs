@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _02_ef_university_db
+namespace _02_ef_university_db.Data
 {
     public static class DbInitializer
     {
