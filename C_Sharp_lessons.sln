@@ -47,7 +47,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12_linq", "12_linq\12_linq.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13_asp_net_mvc", "13_asp_net_mvc", "{51638401-B2B1-451F-B963-3D027398B040}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_empty_app", "01_empty_app\01_empty_app.csproj", "{AEB0E8F8-DBC6-4D59-9CCF-F498C642CF47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_empty_app", "01_empty_app\01_empty_app.csproj", "{AEB0E8F8-DBC6-4D59-9CCF-F498C642CF47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_first_mvc_app", "02_first_mvc_app\02_first_mvc_app.csproj", "{7A76730B-2551-44F4-AD7C-10F7ABFEF147}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{AEB0E8F8-DBC6-4D59-9CCF-F498C642CF47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEB0E8F8-DBC6-4D59-9CCF-F498C642CF47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEB0E8F8-DBC6-4D59-9CCF-F498C642CF47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A76730B-2551-44F4-AD7C-10F7ABFEF147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A76730B-2551-44F4-AD7C-10F7ABFEF147}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A76730B-2551-44F4-AD7C-10F7ABFEF147}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A76730B-2551-44F4-AD7C-10F7ABFEF147}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -150,6 +156,7 @@ Global
 		{340DE5DD-1275-4902-A954-A810549A264A} = {E45F872B-1058-43D6-9FBD-D6B85C7779EF}
 		{9069F4C6-5BEE-4736-AABD-9DA3BB74F58C} = {E45F872B-1058-43D6-9FBD-D6B85C7779EF}
 		{AEB0E8F8-DBC6-4D59-9CCF-F498C642CF47} = {51638401-B2B1-451F-B963-3D027398B040}
+		{7A76730B-2551-44F4-AD7C-10F7ABFEF147} = {51638401-B2B1-451F-B963-3D027398B040}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9A81AE83-18A7-4E52-A184-DB273384F943}
