@@ -16,3 +16,20 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.user-list {
+    list-style-type: none;
+    padding: 0 30px;
+}
+.user-list li {
+    background-color: lightgray;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 3px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.user-list li:hover {
+    background-color: darkgray;
+}

@@ -1,7 +1,27 @@
-﻿<h1>Users Home Page!</h1>
+﻿@model IEnumerable<_02_first_mvc_app.Models.User>;
+
+<h1>Users Home Page!</h1>
 <p>Text rgareg ager aerg aerga rgre!</p>
-<ul>
-    <li>User 1</li>
-    <li>User 2</li>
-    <li>User 3</li>
-</ul>
+
+<h2>User List</h2>
+
+@if (Model == null || Model.Count() == 0)
+{
+    <p>There are no users in the system!</p>
+}
+else
+{
+    <ul class="user-list">
+        @foreach(var user in Model)
+        {
+            <li>
+                <span>[@user.Id] - @user.Name | @user.Email</span>
+                <span>
+                    <a asp-controller="Users" asp-action="Info" asp-route-id="@user.Id">Info</a>
+                    <a asp-controller="Users" asp-action="Delete" asp-route-id="@user.Id">Delete</a>
+                </span>
+            </li>
+        }
+    </ul>
+    <p>Users: @Model.Count()</p>
+}
