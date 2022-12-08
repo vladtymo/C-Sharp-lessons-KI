@@ -1,0 +1,22 @@
+﻿@model _02_first_mvc_app.Models.User;
+
+<h1>Create New User</h1>
+
+<form class="row g-3" asp-action="Create" method="post">
+    <div class="col-6">
+        <label asp-for="Name" class="form-label">Name</label>
+        <input asp-for="Name" type="text" class="form-control" placeholder="Enter your name">
+    </div>
+    <div class="col-6">
+        <label asp-for="Email" class="form-label">Email</label>
+        <input asp-for="Email" type="email" class="form-control" placeholder="Enter your email">
+    </div>
+    <div class="col-12">
+        <label asp-for="BirthDate" class="form-label">Birth Date</label>
+        <input asp-for="BirthDate" type="date" class="form-control">
+    </div>
+   
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Create</button>
+    </div>
+</form>

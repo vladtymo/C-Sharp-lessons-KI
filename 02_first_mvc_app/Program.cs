@@ -1,7 +1,15 @@
+using _02_first_mvc_app.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+string connectionStr = builder.Configuration.GetConnectionString("LocalDb");
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Dependency Injection
+builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(connectionStr));
 
 var app = builder.Build();
 

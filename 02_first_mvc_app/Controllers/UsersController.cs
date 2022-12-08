@@ -1,35 +1,55 @@
-﻿using _02_first_mvc_app.Models;
+﻿using _02_first_mvc_app.Data;
+using _02_first_mvc_app.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace _02_first_mvc_app.Controllers
 {
     public class UsersController : Controller
     {
-        static private List<User> users = new List<User>()
+        private readonly AppDbContext context;
+
+        public UsersController(AppDbContext context)
         {
-            new User() {Id = 1, Name = "Bob", Email = "saper@gmail.com", BirthDate = DateTime.Now},
-            new User() {Id = 2, Name = "Vlad", Email = "blabla@gmail.com", BirthDate = DateTime.Now},
-            new User() {Id = 3, Name = "John", Email = "mister@ukr.net", BirthDate = DateTime.Now},
-            new User() {Id = 4, Name = "Lilia", Email = "developer@gmail.com", BirthDate = DateTime.Now}
-        };
+            this.context = context;
+        }
 
         public IActionResult Index()
         {
             //...
-            return View(users);
+            return View(context.Users.ToList());
         }
 
         public IActionResult Profile()
         {
             return View();
         }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(User user)
+        {
+            // TODO: add validations
+            if (!ModelState.IsValid) return View("Create");
+
+            context.Users.Add(user);
+            context.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+
         public IActionResult Delete(int id)
         {
-            var user = users.FirstOrDefault(x => x.Id == id);
+            var user = context.Users.Find(id);
 
             if (user == null) return NotFound(); // 404
 
-            users.Remove(user);
+            context.Users.Remove(user);
+            context.SaveChanges();
 
             return RedirectToAction("Index");
         }
